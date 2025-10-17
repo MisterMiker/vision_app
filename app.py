@@ -10,14 +10,14 @@ st.set_page_config(page_title="Análisis de Imagen", layout="centered", initial_
 st.markdown("""
     <div style='text-align: center;'>
         <h1 style='color:#4A90E2;'>🔍 Análisis Visual con IA</h1>
-        <p style='font-size:18px;'>Sube una imagen y deja que el modelo la describa, analice o responda tus preguntas 👁️✨</p>
+        <p style='font-size:18px;'>Sube una imagen y deja que el modelo la describa, analice o responda tus preguntas </p>
     </div>
     <hr style='border:1px solid #ddd; margin-top:15px; margin-bottom:25px;'>
 """, unsafe_allow_html=True)
 
 # ------------------------- SELECTOR DE TEMA -------------------------
-theme = st.radio("Elige un tema:", ["🌞 Claro", "🌙 Oscuro"], horizontal=True)
-if theme == "🌙 Oscuro":
+theme = st.radio("Elige un tema:", ["Claro", "Oscuro"], horizontal=True)
+if theme == "Oscuro":
     st.markdown("""
         <style>
             body, .stApp {
